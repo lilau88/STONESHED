@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Page d'Attente</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            text-align: center;
+            margin-top: 50px;
+        }
+        #link {
+            display: none;
+            margin-top: 20px;
+        }
+    </style>
+</head>
+<body>
+    <h1>Bienvenue sur notre page d'attente</h1>
+    <p>Veuillez patienter, le lien sera disponible dans quelques secondes...</p>
+    <div id="link">
+        <a href="https://forms.gle/XJdXJmwWNwGfqnh5A">Accéder au formulaire</a>
+    </div>
+
+    <script>
+        // Temps d'attente en millisecondes (par exemple, 10 secondes)
+        var waitTime = 10000;
+
+        // Fonction pour afficher le lien après le temps d'attente
+        setTimeout(function() {
+            document.getElementById('link').style.display = 'block';
+        }, waitTime);
+    </script>
+</body>
+</html>
